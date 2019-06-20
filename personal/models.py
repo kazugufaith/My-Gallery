@@ -21,23 +21,23 @@ class Editor(models.Model):
         ordering = ['first_name']
 
 
-# class tags(models.Model):
-#     cname = models.CharField(max_length=30)
+class tags(models.Model):
+    cname = models.CharField(max_length=30)
 
-#     def __str__(self):
-#        return self.cname
+    def __str__(self):
+       return self.cname
 
-#     class Meta:  # Meta subclass specifies model-specific options. This helps in ordering data
-#        verbose_name_plural = 'tags'
+    class Meta:  # Meta subclass specifies model-specific options. This helps in ordering data
+       verbose_name_plural = 'tags'
 
-#     def save_(self):
-#        self.save()
+    def save_(self):
+       self.save()
 
-# #class tags(models.Model):
-#     #name = models.CharField(max_length =30)
+#class tags(models.Model):
+    #name = models.CharField(max_length =30)
 
-#    # def __str__(self):
-#         #return self.name
+   # def __str__(self):
+        #return self.name
 
 # class Image(models.Model):
 #     title = models.CharField(max_length =60)
