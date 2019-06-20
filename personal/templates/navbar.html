@@ -9,7 +9,16 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="{% url 'imageToday' %}">My Gallery</a>
+      <a class="navbar-brand" href="{% url 'imageToday' %}">My Gallery</a>  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-auto" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Category</a>
+                <div class="dropdown-menu" aria-labelledby="category">
+                    <a class="dropdown-item" href="#">Office_wear</a>
+                    <a class="dropdown-item" href="#">Casual_wear</a>
+                    <a class="dropdown-item" href="#">Kids_fashion</a>
+                </div>
+          </li>                
     </div>
     <!-- Adding a search form  -->
       <div class="col-sm-4 col-md-4 navbar-right">
