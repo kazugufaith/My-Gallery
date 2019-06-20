@@ -59,3 +59,27 @@
             -o-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out;
         }
+        
+        .nav-item {
+            color: black;
+        }
+        
+        .nav-link {
+            color: maroon;
+        }
+        
+        .navbar-brand {
+            display: inline-block;
+            background-color: rgba(0, 128, 128, 0.9);
+            color: maroon;
+            padding: 0.5%;
+        }
+        
+        .navbar-brand:hover {
+            color: maroon;
+        }
+        
+        .nav-link:hover {
+            color: maroon;
+            background-color: rgba(0, 128, 128, 0.6);
+        }
