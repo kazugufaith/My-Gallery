@@ -39,27 +39,27 @@ class tags(models.Model):
    # def __str__(self):
         #return self.name
 
-# class Image(models.Model):
-#     title = models.CharField(max_length =60)
-#     location = models.CharField(max_length =80)
-#     description = models.TextField()
-#     editor = models.ForeignKey(Editor)
-#     category = models.CharField(max_length =60)
-#     pub_date = models.DateTimeField(auto_now_add=True)
-#     image_image = models.ImageField(upload_to = 'image/')
+class Image(models.Model):
+    title = models.CharField(max_length =60)
+    location = models.CharField(max_length =80)
+    description = models.TextField()
+    editor = models.ForeignKey(Editor)
+    category = models.CharField(max_length =60)
+    pub_date = models.DateTimeField(auto_now_add=True)
+    image_image = models.ImageField(upload_to = 'image/')
 
-#     @classmethod
-#     def todays_image(cls):
-#         today = dt.date.today()
-#         image = cls.objects.filter(pub_date__date = today)
-#         return image
+    @classmethod
+    def todays_image(cls):
+        today = dt.date.today()
+        image = cls.objects.filter(pub_date__date = today)
+        return image
 
-#     @classmethod
-#     def days_image(cls,date):
-#         image = cls.objects.filter(pub_date__date = date)
-#         return image
+    @classmethod
+    def days_image(cls,date):
+        image = cls.objects.filter(pub_date__date = date)
+        return image
 
-#     @classmethod
-#     def search_by_title(cls,search_term):
-#         image = cls.objects.filter(title__icontains=search_term)
-#         return image
+    @classmethod
+    def search_by_title(cls,search_term):
+        image = cls.objects.filter(title__icontains=search_term)
+        return image
