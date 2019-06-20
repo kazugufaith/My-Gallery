@@ -1,0 +1,25 @@
+{% comment %} {% extends 'make-images/base.html' %}
+{% block content %}
+  {{block.super}}
+  <section class="no-touch">
+
+
+  <!-- Looping through news   -->
+  <div class="wrap">
+  {% for image_item in image %}
+    <div class="box">
+        <div class="boxInner">
+        <!-- displaying News articles -->    
+          <h2 class="titleBox"> {{ image_item.title }} </h2>
+          <img src="{{image_item.image_image.url}}" class="img-responsive" alt="Image">     
+        </div>
+    </div>
+      {% comment %} <!--Display image   -->
+     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <img src="{{image_item.image_image.url}}" class="img-responsive" alt="Image">
+     </div> {% endcomment %}  
+  {% endfor %}
+</div>
+</section>
+
+ {% endblock %} {% endcomment %}
