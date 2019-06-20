@@ -14,11 +14,11 @@ Run $ python manage.py runserver to serve the application
 ### Technologies Used
 The application is built on:
 
->Python3.6.8
->JavaScript and JQuery
->Bootstrap 3
->Django 1.11 framework
->Postgresql database
+*Python3.6.8
+*JavaScript and JQuery
+*Bootstrap 3
+*Django 1.11 framework
+*Postgresql database
 
 ### Support and contact details
 For any queries and suggestions on how we could improve on the application, please contact the support team via Tel No: +254 798 3578613 or Email: faithmugesia@gmail.com Any comment on what you liked or feel should have been placed better is appreciated. Tips and other code tricks are welcomed as well.
